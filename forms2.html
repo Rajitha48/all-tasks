@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buspass</title>
+</head>
+<body>
+
+    <center>
+        <img src="./images/forms.jpeg" alt =""/>
+    </center>
+    <center>
+        <fieldset style="width:800px;border-radius:10px">
+            <legend style="background-color: blue;color:white;">Application</legend>
+
+            <form action="">
+                <table cellpadding="10" cellspacing="5" width="800">
+                    <tr>
+                        <td colspan="2">
+                            <label for="">Name:</label>
+                            <input text="text">
+                        </td>
+                        <td colspan="2">
+                            <label for="">FatherName:</label>
+                            <input text="text">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">DOB</label>
+
+                        </td>
+                        <td>
+                            <input type="date">
+                        </td>
+                        <td>
+                            <label for="">Gender</label>
+                        </td>
+                        <td>
+                            <label for="">Male</label>
+                            <input type="radio">
+                            <label for="">Female</label>
+                            <input type="radio">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="">Age:</label>
+                            <input text="text">
+                        </td>
+                        <td colspan="2">
+                            <label for="">Aadhar No:</label>
+                            <input text="text">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="">Whatsapp No:</label>
+                            <input text="text">
+                        </td>
+                        <td colspan="2">
+                            <label for="">Email ID</label>
+                            <input text="text">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <label for="">File:</label>
+                            <input type="file">
+
+                        </td>
+                    </tr>
+
+                </table>
+                
+            </form>
+        </fieldset>
+    </center>
+    <center>
+        <fieldset style="width:800px;border-radius:10px">
+            <legend style="background-color: blue;color:white;">Residential Address</legend>
+
+        <form action="./result.html" method="get">
+            <table cellpadding="10" cellspacing="5" width="800">
+                <tr>
+                    <td colspan="2">
+                            <label for="">Applicant Address:</label>
+                            <textarea name="address" id="address" rows="5" cols="20">
+                                </textarea>
+
+                    </td>
+                    <td colspan="2">
+                        <label for="">District:</label>
+                        <select name="district" id="district">
+                            <option value="SELECT">----SELECT----</option>
+                            <option value="gnt">gnt</option>
+                            <option value="Prakasam">prakasam</option>
+                            <option value="EG">EG</option>
+                            <option value="WG">WG</option>
+                            <option value="SKLM">SKLM</option>
+
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="">Mandal:</label>
+                        <select name="mandal" id="mandal">
+                            <option value="SELECT">----SELECT----</option>
+                            <option value="nallapadu">nallapadu</option>
+                            <option value="vijayawada">vijayawada</option>
+                            <option value="prathipadu">prathipadu</option>
+                            <option value="satenapalli">satenapalli</option>
+                            <option value="nandigama">nandigama</option>
+
+                        </select>
+
+                    </td>
+                    <td colspan="2">
+                        <label for="">Village:</label>
+                        <select name="village" id="village">
+                            <option value="SELECT">----SELECT----</option>
+                            <option value="LP">LP</option>
+                            <option value="KVP">KVP</option>
+                            <option value="AKP">AKP</option>
+                            <option value="TMP">TMP</option>
+                            <option value="KKP">KKP</option>
+
+                        </select>
+>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Pincode</label>
+                        <input type="number">
+
+                    </td>
+                    
+                </tr>
+
+            </table>
+        </form>
+        </fieldset>
+    </center>
+    <center>
+        <form action="./result.html">
+            <fieldset style="width:800px;border-radius: 10px;">
+                <legend style="background-color: blue; color:white;">Pass Type Details</legend>
+                <table cellspacing="20" cellpadding="0" width="800">
+                    <tr>
+                        <td>
+                            <label for="city">City<span style="color:red">*</span></label>
+                            
+                        </td>
+                        <td>
+                            <select name="city" id="city">
+                            <option value="" disabled selected>--select--</option>
+                <option value="vzm">Vizianagaram</option>
+                <option value="cheepurapalli">cheepurapalli</option>
+                <option value="garividi">garividi</option>
+                <option value="gpm">Gajapathinagaram</option>
+                <option value="pvm">Parvathipuram</option>
+                <option value="bobbili">Bobbili</option>
+        
+                            </select>
+                        </td>
+                    </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Pass Type<span style="color:red">*</span></label>
+
+                    </td>
+                    <td>
+                        <select name="pass" id="pass">
+                            <option value="general">General</option>
+                            <option value="Metro">Metro</option>
+                            <option value="E-pass">E=Pass</option>
+                        </select>
+                    </td>
+                    <tr>
+                        <td>
+                            <label for="From">From Place District<span style="color:red">*</span></label>
+                        </td>
+                        <td>
+                          <select name="from" id="From">
+                            <option value="" disabled selected>--select--</option>
+                <option value="vzm">Vizianagaram</option>
+                <option value="cheepurapalli">cheepurapalli</option>
+                <option value="garividi">garividi</option>
+                <option value="gpm">Gajapathinagaram</option>
+                <option value="pvm">Parvathipuram</option>
+                <option value="bobbili">Bobbili</option>
+                </select>
+                        </td>
+                    <td>
+                        <label for="To">To Place District<span style="color:red">*</span></label>
+
+                    </td>
+                    <td>
+                        <select name="to" id="To">
+                           <option value="" disabled selected>--select--</option>
+                <option value="vzm">Vizianagaram</option>
+                <option value="cheepurapalli">cheepurapalli</option>
+                <option value="garividi">garividi</option>
+                <option value="gpm">Gajapathinagaram</option>
+                <option value="pvm">Parvathipuram</option>
+                <option value="bobbili">Bobbili</option>
+                </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="from place">From Place<span style="color:red">*</span></label>
+                    </td>
+                    <td>
+                        <input type="text" id="from palce" name="from place">
+
+                    </td>
+                    <td>
+                        <label for="To place">To Place<span style="color:red">*</span></label>
+                    </td>
+                        
+                    <td>
+                        <input type="text" id="To palce" name="to place">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="route">Route<span style="color:red">*(From-Via_To)</span></label>
+
+                    </td>
+                    <td>
+                        <select name="route" id="route">
+                            <option value="" disabled selected>Select</option>
+                            <option value="vzm-vsp">Vizianagaram-vishakapatnam</option>
+                            <option value="sklm-vsp">Srikakulam-vishakapatnam</option>
+                            <option value="vskp-rmd">vskp-rajhamundry</option>
+                            <option value="vzm-kakinada">vizianagaram-kakinada</option>
+                            <option value="kakinada-vjwd">kakinada-vijayawada</option>
+                                
+                
+                        </select>
+                    </td>
+
+                </tr>
+
+            
+                </table>
+
+            </fieldset>
+        </form>
+
+        
+
+        
+     </center>
+
+     
+<center>
+     <form action="./result.html">
+        <fieldset style="width:800px;border-radius: 10px;">
+                <legend style="background-color: blue; color:white;">Mode of Payment & Pass Collection</legend>
+                <table cellspacing="10" cellpadding="0" width="800">
+
+                    <tr>
+                        <td>
+                            <label for="payment mode">Payment Mode<span style="color:red">*</span></label>
+                        
+                        
+                            <select name="payment" id="payment">
+                                <option value="" disabled selected>Select Payment Mode</option>
+                                <option value="online">Online</option>
+                                <option value="cash">Cash</option>
+                                <option value="card">Card</option>
+                            </select>
+                        </td>
+                  
+                    </tr>
+                       
+                    <tr>
+                        <td>
+                            <label for="pass delivery">Pass Delivery Mode<span style="color:red">*</span></label>
+
+                        
+                        
+                            <select name="pass delivery" id="pass delivery">
+                                <option value="" disabled selected>Select Payment Mode</option>
+                                <option value="online">Online</option>
+                                <option value="offline">Offline</option>
+                
+                                
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="collect pass">Center at which you want to collect Pass<span style="color:red">*</span></label>
+                    
+                        
+                            <select name="collect pass" id="collect pass">
+                                <option value="" disabled selected>--select--</option>
+                                <option value="vzm">Vizianagaram</option>
+                <option value="cheepurapalli">cheepurapalli</option>
+                <option value="garividi">garividi</option>
+                <option value="gpm">Gajapathinagaram</option>
+                <option value="pvm">Parvathipuram</option>
+                <option value="bobbili">Bobbili</option>
+                            </select>
+                        </td>
+                    </tr>
+                    </table>
+                    </fieldset>
+                
+     </form>
+     </center>
+   <br>
+
+     <center>
+  <img src="./image1.png">
+  </center>
+
+    
+    </center>
+
+</body>
+</html>
+
+    
+</body>
+</html>
